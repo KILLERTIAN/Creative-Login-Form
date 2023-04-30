@@ -29,6 +29,46 @@ body {
     transition: 0.5s;
 }
 
+.container i {
+    border-radius: 43% 57% 74% 26%/44% 30% 70% 56%;
+    animation: animate 4s reverse infinite;
+}
+
+.container i:nth-child(1) {
+    border-radius: 43% 57% 74% 26%/44% 30% 70% 56%;
+    animation: animate 4s linear infinite;
+}
+
+.container i:nth-child(2) {
+    border-radius: 23% 77% 31% 68%/71% 30% 70% 29%;
+    animation: animate2 5s reverse infinite;
+}
+
+.container:hover i {
+    border: 6px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr));
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(350deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 .container .login {
     position: absolute;
     width: 300px;
